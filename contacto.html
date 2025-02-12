@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="css/estilos_contacto.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Contacto - YOUR STILE</title>
+
+  <style>
+    .contact-form {
+      max-width: 500px; 
+      margin: auto; 
+    }
+    .btn-primary {
+      transition: background-color 0.3s, border-color 0.3s; 
+    }
+    .btn-primary:hover {
+      background-color: #0056b3; 
+      border-color: #0056b3; 
+    }
+    .info-container {
+      max-width: 400px; 
+      margin-left: 20px; 
+    }
+    .info-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <img src="imagenes/logofinal.jpg" alt="Logo" width="70" height="70" class="d-inline-block align-text-top"> Y
+
+YOUR STILE
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="web.html">Inicio</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="ofertas.html">Ofertas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-6 contact-form">
+        <h2 class="text-center mb-4">Contáctanos</h2>
+        <form action="tu_script_de_envio" method="POST"> 
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" required>
+          </div>
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="correo" name="correo" required>
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+          </div>
+         
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#confirmacionModal">
+            Enviar
+          </button>
+        </form>
+      </div>
+
+      <div class="col-md-6 info-container">
+        <h2 class="info-title">YOUR STILE</h2>
+        <p><strong>Dirección:</strong> Cibertec, Grupo8, Perú</p>
+        <p><strong>Teléfono:</strong> (01) 224-5678</p>
+        <p><strong>Email:</strong> info@yourstyle.com</p>
+        <p><strong>Descripción:</strong> En Tienda YOUR STILE ofrecemos una amplia variedad de ropa y accesorios con un estilo moderno . Nuestro objetivo es brindar la mejor calidad y comodidad a nuestros clientes.</p>
+        <p><strong>Horario:</strong> Lunes a Sábado, 09:00 AM - 7:00 PM</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="confirmacionModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel">¡Éxito!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          La información ha sido enviada a su correo. ¡Gracias por su visita!
+        </div>
+        <div class="modal-footer">
+      
+
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <footer>
+    <div class="footer-container">
+        <div class="footer-column">
+            <input type="checkbox" id="toggle-tienda" class="toggle-checkbox">
+            <label for="toggle-tienda" class="toggle-title">Tienda YOUR STILE <span class="toggle-icon">+</span></label>
+            <ul class="footer-content">
+                <li><a href="#">Trabaja con nosotros</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Tiendas</a></li>
+                <li><a href="#">Contáctanos</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <input type="checkbox" id="toggle-marcas" class="toggle-checkbox">
+            <label for="toggle-marcas" class="toggle-title">Marcas <span class="toggle-icon">+</span></label>
+            <ul class="footer-content">
+                <li><a href="#">Supreme</a></li>
+                <li><a href="#">Carhartt WIP</a></li>
+                <li><a href="#">Off-White</a></li>
+                <li><a href="#">HUF</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <input type="checkbox" id="toggle-atencion" class="toggle-checkbox">
+            <label for="toggle-atencion" class="toggle-title">Atención al cliente <span class="toggle-icon">+</span></label>
+            <ul class="footer-content">
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Cambios y devoluciones</a></li>
+                <li><a href="#">Política y protección de datos</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <input type="checkbox" id="toggle-info" class="toggle-checkbox">
+            <label for="toggle-info" class="toggle-title">Información <span class="toggle-icon">+</span></label>
+            <ul class="footer-content">
+                <li>Razon Social: Estilo Y S.A</li>
+                <li>Ruc: 20111110788891</li>
+                <li>Dirección: Cibertec, Grupo8, Perú</li>
+                <li>Teléfono: (01) 134-5678</li>
+                
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-social">
+        <a href="https://www.facebook.com" class="icon-facebook"> </a>
+        <a href="https://www.youtube.com" class="icon-youtube"> </a>
+        <a href="https://www.whatsapp.com/" class="icon-whatsapp"> </a>
+        <a href="https://twitter.com/" class="icon-twitter"> </a>
+    </div>
+
+    <BR> <BR>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Tienda YOUR STILE - Todos los derechos reservados</p>
+    </div>
+</footer>
+
+</body>
+</html>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
